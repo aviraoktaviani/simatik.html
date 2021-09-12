@@ -1,42 +1,88 @@
 <html>
 <head>
 <style>
-ul {
-background-color:#00FFFF;
-text-family: Papyrus, Fantasy;
+* {
+  box-sizing: border-box;
 }
-h2 {
-background :#E6E6FA;
-font-family : Lucida Console, Monospace;
-}
-form {
-background #BOC4DE
 
+body {
+font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+  font-family: "copperplate",fantasy;
+  background-color: #D2691E;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 35px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: ;
+  height: 400px; 
+  background: #FF7F50;
+  padding: 20px;
+}
+  
+  nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 100%;
+ background-color: #FF7F50;
+  height: 200px;
+text-align: center;  
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #D2691E;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
 </style>
 </head>
-<body>
-<h2> Warteg Online </h2>
-
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="inputdata.html">Kembali</a></li>
-    </ul>
+   <body>
+   <header>
+  <h2>Form Login : </h2>
 </header>
-	
-<section>
-<h2> Form Login : </h2>
-  <form>
-    <form action="inputdata.html">
-    <label for="inputnama"> Masukkan Nama : </label> <br>
-    <input type="text" value ="Avira Oktaviani"> <br>
-    <label for="inputpassword"> Masukkan Pasword :</label> <br>
-    <input type="password"value="avira12345"> <br>
-    <input type="sumbit" value="login">
-  </form>
-</section>
-	
-</body>
-
+<article>
+   <section>
+	 <form action="berhasil.html">
+ 	  <label for="inputnama"> Masukan Nama	:</label><br>
+ 	  <input type="text"><br>
+ 	  <label for="inputpassword"> Masukan Password	:</label><br>
+ 	  <input type="text"><br> 
+ 	  <a href="berhasil.html">Login</a>
+	 </form>
+	 </section>
+</article>
+<footer>
+ <p>Di Buat Oleh <br> Avira Oktaviani <br>XII RPL 1</p>
+</footer>
+    </body>
 </html>
+
