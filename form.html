@@ -71,14 +71,45 @@ footer {
 </header>
 <article>
    <section>
-	 <form action="inputdata.html">
- 	  <label for="inputnama"> Masukan Nama	:</label><br>
- 	  <input type="text"><br>
- 	  <label for="inputpassword"> Masukan Password	:</label><br>
- 	  <input type="text"><br> 
- 	  <a href="inputdata.html">Login</a>
-	 </form>
-	 </section>
+	<form>
+<input type="text">
+
+<label>Nama Belakang </label>
+<input type="text"><br><br>
+<label>Tempat Lahir</label>
+<input list="tempat lahir">
+<datalist id="tempat lahir">
+ <option value="Kab Madiun">
+ <option value="Kab Ngawi">
+ <option value="Kab Magetan">
+ <option value="Kab Ponorogo">
+ </datalist> <br> <br>
+ 
+ <label>Tanggal Lahir</label>
+ <input type="date"><br></br>
+ 
+<label>Jenis Kelamin </label>
+<input type="radio" id="laki-laki">
+<label> Laki-Laki </label>
+<input type="radio" id="perempuan">
+<label> Perempuan </label> <br><br>
+
+<label> Hobby </label>
+<input type="checkbox" id="olahraga" value="olahraga">
+<label> Olahraga </label>
+<input type="checkbox" id="membaca" value="membaca">
+<label> Membaca </label>
+<input type="checkbox" id="kluyuran" value="kluyuran">
+<label> Kluyuran </label> <br><br>
+<label> Alamat </label>
+<textarea rows="3"> </textarea> <br><br>
+
+<input type="sumbit" value="Daftar">
+<input type="reset">
+
+ </form>
+	   
+</section>
 </article>
 	   
 <footer>
