@@ -1,82 +1,113 @@
 <html>
 <head>
 <style>
+    ul {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #333;
+
+}
+
+li {
+
+  float: left;
+
+}
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+
+  background-color: #FF69B4;
+}
+   
+   active{
+      background-color: #FF69B4;
+    }
+   herder{
+      text-align:center;
+      background-color:#FFB6C1;
+}
+   
+ body {
+  background-image:url("warteg.jpg");
+  }
+  
 * {
   box-sizing: border-box;
 }
 
 body {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Monaco, courier, monospace;
 }
 
+/* Style the header */
 header {
-  font-family: "copperplate",fantasy;
-  background-color: #FF4500;
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-  padding: 25px;
+  background-color: #FF0000;
+  padding: 15px;
   text-align: center;
-  font-size: 30px;
-  color: white;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  font-size: 40px;
+  color: yellow;
+  background-image: url('warteg.jpg.jpg');
 }
 
-li {
+
+article {
   float: left;
+  padding: 20px;
+  width: 1350px;
+  background-color: #FFDEAD;
+  height: 220px; /* only for demonstration, should be removed */
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #000000;
-}
-
+/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* Style the footer */
 footer {
-  background-color: #FF4500;
+  background-color: #FF0000;
   padding: 10px;
   text-align: center;
-  
+  color: white;
 }
 
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
     height: auto;
   }
 }
-
-</style>
+    </style>
 </head>
-   <body>
-	   <header>
-  <h2> Presensi </h2>
-</header>
-   
-   <ul>
- <li><a href="#home">Home</a></li>
+<body>
+<h2> Tabel Data Kelas </h2>
+<nav>
+ <ul>
+<li><a href="#home">Home</a></li>
 
  <li><a class="active" href="menu.html">Menu</a></li> 
 
@@ -86,8 +117,10 @@ footer {
  <li><a href="presensi.html">Presensi</a></li>
 
 </ul> 
-
-<h2> Tabel Data Kelas </h2>
+</nav>
+ </div>
+<article>
+  <section></section>
  <table border="1">
   <tr bgcolor="red">
   <th rowspan="2"> NO </th>
@@ -123,8 +156,12 @@ footer {
   <td> H </td>
   <td> H </td>
   </tr>
-<footer>
- <p>Di Buat Oleh <br> Avira Oktaviani XII RPL 1</p>
-</footer>    
+  
+  </table>
+  </article>
+  </section>
+  <footer>
+  <p>Created by : Avira Oktaviani</p>
+</footer>
 </body>
 </html>
